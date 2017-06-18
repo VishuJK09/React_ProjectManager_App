@@ -13,22 +13,21 @@ class App extends Component {
   componentWillMount(){
     this.setState({projects : [
       {
-        title : 'Magnum Clothing',
-        category : 'ERP (Dashboard)'
+        title : 'Business Website',
+        category : 'Web Design'
       },
       {
-        title : 'Delta Dynamix',
-        category : 'Website'
+        title : 'Social App',
+        category : 'Mobile Application'
       },
       {
-        title : 'Edwhizz',
-        category : 'Website'
+        title : 'Ecommerce App',
+        category : 'Web Development'
       }
     ]});
   }
 
   handleAddProject (project){
-    // console.log(project);
     let projects = this.state.projects;
     projects.push(project);
     this.setState({projects: projects});
@@ -37,9 +36,9 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid">
-          <h2 className="text-center">Welcome to Project Manager</h2>
-          <AddProject addProject={this.handleAddProject.bind(this)}/>
-          <Projects  projects = {this.state.projects}/>
+        <h2 className="text-center">Welcome to Project Manager</h2>
+        <AddProject addProject={this.handleAddProject.bind(this)}/>
+        <Projects  projects = {this.state.projects}/>
       </div>
     );
   }

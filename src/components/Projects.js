@@ -3,12 +3,10 @@ import ProjectItem from './ProjectItem';
 
 
 class Projects extends Component {
-
   render() {
     let projectItems;
     if (this.props.projects){
       projectItems = this.props.projects.map(projects => {
-        // console.log(projects);
         return(
           <ProjectItem key={projects.title} projects = {projects} />
         );
@@ -17,9 +15,8 @@ class Projects extends Component {
     return (
       <div className="container">
         <div className="projects_con">
-        <h6>Latest Projects</h6>
+        <h4>Latest Projects</h4>
           {projectItems}
-
         </div>
       </div>
     );

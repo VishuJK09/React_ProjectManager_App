@@ -33,9 +33,9 @@ class AddProject extends Component {
     });
     return (
       <div className="container">
-        <h5 className="text-center">Add Projects</h5>
-        <div className="row justify-content-md-center">
-          <div className="col-md-6">
+        <h5 className="text-center add-project-title">Add Projects</h5>
+        <div className="row">
+          <div className="col-md-6 col-md-offset-3">
             <form onSubmit = {this.handleSubmit.bind(this)}>
               <div className="form-group">
                 <label>Title</label>
@@ -47,7 +47,9 @@ class AddProject extends Component {
                   {categoryOption}
                 </select>
               </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <div className="text-center">
+              <button type="submit" className="primary">Submit</button>
+              </div>
             </form>
           </div>
         </div>
