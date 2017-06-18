@@ -3,4 +3,4 @@
 
 
 
-This is a simple project manager app built with React!
+<p>This is a simple project manager app built using React!</p>
