@@ -5,4 +5,4 @@
 2. Navigate to folder 'React_ProjectManager_App'
 3. ```npm install```
 4. ```npm start```
-4. Navigate to localhost:300
+4. Navigate to localhost:3000
